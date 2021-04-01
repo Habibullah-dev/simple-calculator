@@ -1,0 +1,131 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    font-weight: 700;
+    color: deepskyblue;
+    text-align: center;
+    padding: 20px;
+    text-shadow: 3px 5px 7px #ccc;
+}
+main {
+    height:630px;
+    width: 40%;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 15px;
+    margin: 10px auto;
+}
+.calculator {
+    padding: 5px;
+    width: 100%;
+    height: 100%;
+}
+.calculator_output {
+    width: 100%;
+    height: 20%;
+    background-color: black;
+    border-radius: 10px;
+    box-shadow: 2px 5px 10px #ccc;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    text-align: end;
+    padding: 20px;
+    justify-content: center;
+    align-items:flex-end;
+    font-size: 30px;
+}
+.calculator_value {
+    width: 100%;
+    height: 50px;
+}
+.calculator_value input {
+    width: 100%;
+    height: 45px;
+    outline: none;
+    font-size: 30px;
+    border: none;
+}
+
+.calculator_input {
+    width: 100%;
+    height: 65%;
+    background-color: lightcyan;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+.calculator_buttons {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+}
+.calculator_buttons_row {
+    background-color: inherit;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 20%;
+}
+
+.btn {
+    width: 70px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    background-color: white;
+    box-shadow: 2px 3px 5px #ccc;
+    outline: none;
+}
+
+.btn:last-of-type {
+    border-radius: 50%;
+    background-color: burlywood;
+}
+.last-row .btn {
+    width: 100px;
+    height: 50px;
+    border-radius: 0;
+}
+.clear {
+    color: red;
+}
+.delete {
+    color: darkblue;
+}
+.percent {
+    color: darkgreen;
+}
+@media (max-width:500px) {
+    h1 {
+        font-size: 16px;
+    }
+    main {
+        height:90vh;
+        width: 60%;
+        border-radius: 10px;
+        margin: 5px auto;
+    }
+    .btn {
+        width: 50px;
+        height: 50px;
+    }
+    .last-row .btn {
+        width: 70px;
+        height: 50px;
+    }
+}
